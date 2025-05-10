@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Апр 22 2025 г., 14:11
+-- Время создания: Май 11 2025 г., 00:14
 -- Версия сервера: 10.4.32-MariaDB
 -- Версия PHP: 8.0.30
 
@@ -40,13 +40,8 @@ CREATE TABLE `f_post` (
 --
 
 INSERT INTO `f_post` (`id`, `topicId`, `userId`, `message`, `dateCreate`) VALUES
-(27, 3, 0, '@', 1745313319),
-(30, 4, 0, 'Ð° ', 1745313946),
-(33, 1, 13, 'wdadas', 1745317425),
-(35, 1, 13, 'uuytyjtyj', 1745317523),
-(36, 5, 13, 'QQ', 1745317543),
-(39, 2, 13, 'hi', 1745318485),
-(43, 6, 13, 'Ð²Ñ†Ñ„Ð²Ñ„Ñ‹Ð²Ñ†', 1745321537);
+(56, 12, 17, ':)', 1746915019),
+(58, 13, 17, '(\"_\")', 1746915130);
 
 -- --------------------------------------------------------
 
@@ -69,13 +64,8 @@ CREATE TABLE `f_topic` (
 --
 
 INSERT INTO `f_topic` (`id`, `name`, `countMessages`, `userId`, `dateCreate`, `replyUserId`, `dateReply`) VALUES
-(1, 'lol', 2, 13, 1745276639, 13, 1745317523),
-(2, 'sddwads', 1, 13, 1745276650, 13, 1745318485),
-(3, '75345', 1, 0, 1745313319, 0, 1745313319),
-(4, 'Ð° Ð² Ñ‡ÐµÐ¼ Ð¿Ñ€Ð¾Ð±', 1, 0, 1745313946, NULL, NULL),
-(5, 'iuy', 1, 13, 1745316744, 13, 1745317543),
-(6, 'Ñ„ÑÑ„Ñ‹Ð²Ñ†Ð²Ñ„', 1, 13, 1745321537, NULL, NULL),
-(7, 'wdadas', 0, 0, 1745323829, NULL, NULL);
+(12, 'pan Buchta )', 1, 17, 1746915019, NULL, NULL),
+(13, 'hi', 1, 17, 1746915036, 17, 1746915130);
 
 -- --------------------------------------------------------
 
@@ -97,9 +87,11 @@ CREATE TABLE `f_user` (
 --
 
 INSERT INTO `f_user` (`id`, `login`, `email`, `password`, `name`, `surname`) VALUES
-(0, 'admin', 'jiurteger@gmail.com', '$2y$10$GTnZdgED3VNXyu3ZwGF8DeZx03RirSP6n3x01KX5wC4Lc0gCA5roa', 'ya', 'horoshi'),
 (13, 'demo', 'dadadfd@yahoo.com', '$2y$10$1Js2rcInZzXmAAA1jGQ0UuYpXXg81KY/B.IYl9LNhcvSXhBIq82ZS', 'sadad', 'sgsss'),
-(14, 'dadadjk', 'dfwdad@gmail.com', '$2y$10$G78w.I8AdbtyLUWZc9wdkuhTRptxoJiZ9ojy05ulv3cBMqv4LCwLW', 'wdadad', 'dddd');
+(14, 'dadadjk', 'dfwdad@gmail.com', '$2y$10$G78w.I8AdbtyLUWZc9wdkuhTRptxoJiZ9ojy05ulv3cBMqv4LCwLW', 'wdadad', 'dddd'),
+(15, 'jfbsd', 'qqwdada@gmail.com', '$2y$10$HBzjsOJDjD62eP3HhQZIIO/g1SgtfrBpu2NB4c6.mPYveXZwdi18G', 'awdadad', 'dwadawrada'),
+(16, 'ayayayayaay', 'dawdadad@gmail.com', '$2y$10$WCr010R9XBiWt1cbBcAeg.98cwqh.4UGXX993UYJTBP8bZHauVZS.', 'sdadwasdadw', 'asdawtfafa'),
+(17, 'heexys', 'jiurteger@gmail.com', '$2y$10$MzUulwD2Da6fcKc855lLqO/Xu.U1QeNiaMZWCMHuW7q4LNqelCMn.', 'sadad', 'sg');
 
 --
 -- Индексы сохранённых таблиц
@@ -135,13 +127,19 @@ ALTER TABLE `f_user`
 -- AUTO_INCREMENT для таблицы `f_post`
 --
 ALTER TABLE `f_post`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT для таблицы `f_topic`
 --
 ALTER TABLE `f_topic`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT для таблицы `f_user`
+--
+ALTER TABLE `f_user`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц
